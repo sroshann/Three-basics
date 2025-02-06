@@ -17,11 +17,11 @@ const camera = new Three.PerspectiveCamera( 75, window.innerWidth / window.inner
 // // Param 2 - Aspect ratio
 // // Param 3 - Near
 // // Param 4 - Far
-camera.position.z = 3 // Adjusting camera position
+camera.position.z = 5 // Adjusting camera position
 scene.add( camera );
 
 // OBJECT
-const geometry = new Three.BoxGeometry()
+const geometry = new Three.TorusKnotGeometry()
 const material = new Three.MeshStandardMaterial({ color : '#468585', emissive : '#468585' }) // The emmsive is provided to react with light
 const object = new Three.Mesh( geometry, material )
 scene.add( object )
